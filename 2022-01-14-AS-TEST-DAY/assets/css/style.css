@@ -1,0 +1,55 @@
+.container {
+  width: 1000px;
+  height: 550px;
+  margin: 100px auto;
+  text-align: center;
+  overflow: hidden;
+}
+.container section {
+  float: left;
+  width: 25%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.container section h2 {
+  color: #e15d4c;
+  font-size: x-large;
+  margin: 30 auto;
+}
+.box-1,.box-2,.box-3,.box-4{
+  color: rgb(102, 102, 102);
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+}
+/* WORD BREAK ON CLIENT KICKOFF */
+section.box-1 h2 {
+  word-spacing: 20px;
+}
+/* --------------------------------- */
+
+/* IMAGE FORMATING SECTIONS */
+.box-1 img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.box-2 img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.box-3 img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.box-4 img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+/* --------------------------------- */
