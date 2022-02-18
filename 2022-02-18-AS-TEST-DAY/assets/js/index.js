@@ -45,26 +45,26 @@ function rndNum(min, max) {
 
 // ----------------------- 6 -----------------------
 
-// let array = [];
-// let ilgis = rndNum(20, 30);
+let array = [];
+let ilgis = rndNum(20, 30);
 
-// for (let i = 0; i < ilgis; i++) {
-//   array.push(rndNum(10, 30));
-// }
+for (let i = 0; i < ilgis; i++) {
+  array.push(rndNum(10, 30));
+}
 
-// let max = array[0];
-// let max2 = array[0];
+let max = array[0];
+let max2 = array[0];
 
-// for (let i = 0; i < array.length; i++) {
-//   if (max < array[i]) {
-//     max2 = max;
-//     max = array[i];
-//   }
-// }
+for (let i = 0; i < array.length; i++) {
+  if (max < array[i]) {
+    max2 = max;
+    max = array[i];
+  }
+}
 
-// console.log("Pirma didžiausia reikšmė masyve: " + max);
-// console.log("Antra didžiausia reikšmė masyve: " + max2);
-// console.log(array);
+console.log("Pirma didžiausia reikšmė masyve: " + max);
+console.log("Antra didžiausia reikšmė masyve: " + max2);
+console.log(array);
 
 // ----------------------- 7 -----------------------
 
