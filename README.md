@@ -1,1 +1,2 @@
 # Praktiniai testai
+Arminas Strolys
