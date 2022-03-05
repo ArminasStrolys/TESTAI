@@ -64,7 +64,7 @@ africa.forEach(e => {
 
 let animals = document.createElement('li');
 animals.innerText = africa
-$1('ul')[0].appendChild(animals);
+$1('ul')[0].appendChild((animals));
 
 // $1('ul')[0].forEach( e => {  //šitą atkomentavus, neveiks kodas po juo
 //     e.appendChild(animals);
