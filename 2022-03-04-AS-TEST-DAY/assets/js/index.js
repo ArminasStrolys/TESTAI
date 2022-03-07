@@ -13,6 +13,7 @@ const africa = [
 const australia = ["Kengūra", "Ančiasnapis", "Dingo", "Atsirado", "Strutis"];
 let array = [];
 let sum = 0;
+let string = 'AUSTRALIA:'
 
 function rand(min, max) {
   min = Math.ceil(min);
@@ -71,22 +72,14 @@ c. Elementus su tuščiais stringais praleiskite ir jiems <li> elementų nekurki
 
 console.log(africa);
 
-africa.forEach((e) => {
+africa.forEach(e => {
   console.log(e);
-});
-
-let animals = document.createElement("li");
-animals.innerText = africa;
-$1("ul")[0].appendChild(animals);
-
-// animals.forEach(e => {
-//   animals.innerText = e.africa;
-//   $1("ul")[0].appendChild(animals);
-// })
-
-// $1('ul')[0].forEach( e => {  //šitą atkomentavus, neveiks kodas po juo
-//     e.appendChild(animals);
-// });
+  let li = document.createElement('li');
+  li.innerHTML = e;
+  if (e != ''){
+    $1('ul')[0].appendChild(li);
+  }
+})
 
 // ------------------------- 4 -------------------------
 /*
@@ -120,15 +113,17 @@ b. Tą stringą naudodami innerHTML() metodą įdėkite į <ul> tago vidų. (5 t
 c. Generavimo metu “Dingo” background’ą nuspalvinkite mėlynai. (5 taškai)
 */
 
-// console.log(australia);
+console.log('---------------------------------------------------------');
+console.log(australia);
 
-// australia.forEach((e) => {
-//   $1("ul")[1].innerText = e;
-//   console.log(e);
-//   for (let i = 0; i < australia.length; i++) {
-//     $1("ul")[1].innerHTML = `<li>${e}</li>`;
-//   }
-//   // if (e == 'Dingo'){
-//   //     e.style.backgroundColor = 'blue'
-//   // }
-// });
+australia.forEach(e => {
+  console.log(e);
+if (e == 'Dingo'){
+  string += `<li style="background-color:blue">${e}</li>`
+} else {
+  string += `<li>${e}</li>`
+}
+})
+console.log(string);
+
+$1('ul')[1].innerHTML = string
