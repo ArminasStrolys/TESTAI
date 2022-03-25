@@ -3,9 +3,9 @@ import Jokes from '../jokes/Jokes';
 
 function App() {
   return (
-    <article className="App">
+    <div className="App">
 <Jokes />
-    </article>
+    </div>
   );
 }
 
