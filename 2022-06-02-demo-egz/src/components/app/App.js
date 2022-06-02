@@ -1,7 +1,9 @@
-
+import Navi from "../navigation/Navi";
 
 function App() {
-  return <div className="App">test</div>;
+  return <>
+    <Navi />
+  </>
 }
 
 export default App;
