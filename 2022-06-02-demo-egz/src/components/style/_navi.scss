@@ -1,23 +1,31 @@
 .nav-bar {
   height: 50px;
-  background-color: aqua;
+  // background-color: aqua;
   margin: 0;
   padding: 20px 0;
   ul {
-      padding: 0 90px;
+    padding: 0 90px;
   }
   ul li {
     list-style: none;
     display: inline;
     padding-right: 50px;
-    
   }
-  a{
-text-decoration: none;
-color: black;
+  a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
   }
-  .sign-in{
-      float: right;
-      padding-right: 30px;
+  a:hover{
+    color: rgb(0, 103, 187);
+  }
+  .sign-in {
+    float: right;
+    padding-right: 30px;
+  }
+  .logo{
+    width: 90px;
+position: absolute;
+top: 15px;
   }
 }

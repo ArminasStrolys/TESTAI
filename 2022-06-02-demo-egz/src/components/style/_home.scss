@@ -1,0 +1,27 @@
+.home-page {
+  margin: 100px 10% 0 10%;
+  h1 {
+    text-align: center;
+  }
+  .start {
+    margin-top: 50px;
+    text-align: center;
+    button {
+      padding: 15px 0;
+      border-radius: 30px;
+      border: none;
+      background-color: lightcoral;
+      transition: 0.3s;
+    }
+    button:hover {
+      cursor: pointer;
+      background-color: rgb(243, 101, 101);
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 15px;
+      border-radius: 30px;
+    }
+  }
+}
