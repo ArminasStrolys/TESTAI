@@ -1,4 +1,11 @@
 import React from "react";
+import Admin from "../admin/Admin";
+import Home from "../home/Home";
+import News from "../news/News"
+import Fundraisers from "../fundraisers/Fundraisers"
+import Publisher from "../publisher/Publisher"
+import SignIn from "../signIn/SignIn";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const Navi = () => {
   return (
@@ -12,6 +19,16 @@ const Navi = () => {
           <li className="sign-in"> <a href="/sign-in">Sign in</a></li>
         </ul>
       </div>
+      <Router>
+        <Routes>
+        <Route path="/" element={<Home />} />
+          <Route path="/fundraisers" element={<Fundraisers />} />
+          <Route path="/publisher" element={<Publisher />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/sign-in" element={<Admin />} />
+        </Routes>
+      </Router>
     </>
   );
 };
