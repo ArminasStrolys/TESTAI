@@ -17,7 +17,7 @@ const Navi = () => {
           <li><a href="/fundraisers">Fundraisers</a></li>
           <li><a href="/publisher">Publish project</a></li>
           <li><a href="/news">News</a></li>
-          <li><img src={logo} alt="fund me img" className="logo"/></li>
+          <li><a href="/"><img src={logo} alt="fund me img" className="logo"/></a></li>
           <li className="sign-in"> <a href="/sign-in">Sign in</a></li>
         </ul>
       </div>
